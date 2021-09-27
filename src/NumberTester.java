@@ -1,4 +1,4 @@
-public class NumberTester {
+public class NumberTester implements NumberTest {
 
     public NumberTester(String fileName){
 
@@ -18,5 +18,10 @@ public class NumberTester {
 
     public void testFile(){
 
+    }
+
+    @Override
+    public boolean testNumber(int number) {
+        return false;
     }
 }
