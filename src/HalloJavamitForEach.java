@@ -15,8 +15,9 @@ public class HalloJavamitForEach {
         for(String str : liste){
             System.out.println(str);
         }
-        
+
         liste.forEach((String s) -> System.out.println(s));
+        liste.forEach(System.out::println);
 
     }
 
