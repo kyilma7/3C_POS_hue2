@@ -11,5 +11,12 @@ public class NumberTester {
     public void setPrimeTester(NumberTest primeTester){
         this.primeTester = primeTester;
     }
-    
+
+    public void setPalindromeTester(NumberTest palindromeTester){
+        this.palindromeTester = palindromeTester;
+    }
+
+    public void testFile(){
+
+    }
 }
