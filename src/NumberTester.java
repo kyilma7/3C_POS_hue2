@@ -2,8 +2,6 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.stream.IntStream;
 
 public class NumberTester implements NumberTest {
 
@@ -32,6 +30,9 @@ public class NumberTester implements NumberTest {
         String line;
         try (BufferedReader bfr = new BufferedReader(new FileReader("Tester.csv"))){
             line = bfr.readLine();
+            while(line != null) {
+                line = bfr.readLine();
+            }
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
