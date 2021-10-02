@@ -34,6 +34,10 @@ public class NumberTester implements NumberTest {
                 line = bfr.readLine();
                 if (line != null) {
                     String[] array = line.split(";");
+                    int numberCheck = Integer.parseInt(array[1]);
+                    switch (array[0]) {
+                    
+                    }
                 }
             }
 
