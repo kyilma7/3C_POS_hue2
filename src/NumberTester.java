@@ -45,6 +45,9 @@ public class NumberTester implements NumberTest {
                                 System.out.println("ODD");
                             }
                             break;
+                        case "2":
+                            NumberTest isPrimeNumber = (n) -> n>2 && (n % 2) != 0 && (n % n) == 0;
+                            setPrimeTester(isPrimeNumber);
                     }
                 }
             }
