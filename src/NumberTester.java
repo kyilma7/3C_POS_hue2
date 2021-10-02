@@ -32,6 +32,9 @@ public class NumberTester implements NumberTest {
             line = bfr.readLine();
             while(line != null) {
                 line = bfr.readLine();
+                if (line != null) {
+                    String[] array = line.split(";");
+                }
             }
 
         } catch (FileNotFoundException e) {
