@@ -36,7 +36,15 @@ public class NumberTester implements NumberTest {
                     String[] array = line.split(";");
                     int numberCheck = Integer.parseInt(array[1]);
                     switch (array[0]) {
-                    
+                        case "1":
+                            NumberTest isEven = (n) -> (n%2) == 0;
+                            setOddEvenTester(isEven);
+                            if (oddTester.testNumber(numberCheck)){
+                                System.out.println("EVEN");
+                            }else{
+                                System.out.println("ODD");
+                            }
+                            break;
                     }
                 }
             }
