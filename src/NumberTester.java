@@ -50,7 +50,12 @@ public class NumberTester implements NumberTest {
                             setPrimeTester(isPrimeNumber);
                             if (primeTester.testNumber(numberCheck)){
                                 System.out.println("PRIME");
+                            }else{
+                                System.out.println("NO PRIME");
                             }
+                            break;
+                        case "3":
+                            break;
                     }
                 }
             }
